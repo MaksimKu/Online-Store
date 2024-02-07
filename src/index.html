@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<header>
+
+</header>
+<body>
+  <div class="Filter_wrapper">
+    <div class="Filter_group">
+      <h4 class="title">Фильтры по значению</h4>
+      <div>
+        <div class="FilterBrand">
+          Производитель:
+            <button class="button_brand type-Sam"></button>
+            <button class="button_brand type-App"></button>
+            <button class="button_brand type-Mi"></button>
+        </div>
+        <div class="FilterCamera">
+          Количество камер:
+            <button class="button_cam type-large">3</button>
+            <button class="button_cam type-medium">2</button>
+            <button class="button_cam type-small">1</button>
+        </div>
+        <div class="FilterColor">
+          Цвет:
+            <button class="button_color button_color-white"></button>
+            <button class="button_color button_color-yellow"></button>
+            <button class="button_color button_color-red"></button>
+        </div>
+        <div class="FilterFavor">
+          Только популярные:
+          <div>
+            <input type="checkbox" class="favor-input" id="checkbox">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Filter_group">
+      <h4 class="title">Фильтры по диапазону</h4>
+      <div>
+        <div class="Range">
+          <div>
+            <h5>Количество на складе: </h5>
+            <div class="range-slider">
+              <div class="range-slider_numb">1</div>
+              <div class="container">
+                <input class="amount" type="range" min="1" step="1" max="12" value="1">
+                <input class="amount" type="range" min="1" step="1" max="12" value="12">
+              </div>
+            <div class="range-slider_numb">12</div>
+          </div>
+        </div>
+      </div>
+      <div class="Range">
+        <div>
+          <h5>Год выхода на рынок: </h5>
+          <div class="range-slider">
+            <div class="range-slider_numb">2000</div>
+            <div class="container">
+              <input class="yare" type="range" min="2000" step="1" max="2022" value="2000">
+              <input class="yare" type="range" min="2000" step="1" max="2022" value="2022">
+            </div>
+                <div class="range-slider_numb">2022</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="Filter_group">
+        <h4 class="title"></h4>
+        <div>
+          <div class="FilterName">
+            <h5 class="title">Поиск</h5>
+            <div class="searchWrapper">
+              <input placeholder="Введите текст" type="text" class="search false" value="">
+            </div>
+          </div>
+            <h5 class="title">Сортировка</h5>  
+              <select class="sel">
+                <option>По названию, от А до Я</option>
+                <option>По названию, от Я до А</option>
+                <option>По убыванию, года выпуска</option>
+                <option>По возрастанию, года выпуска</option>
+                <option>По убыванию, количества</option>
+                <option>По возрастанию, количества</option>
+              </select>
+            <div class="Reset">
+              <button class="Reset_button">Сброс фильтров</button>
+              <!-- <button class="Reset_button">Сброс настроек</button> -->
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="product">
+    <div class="product-card">
+      <h4 class="product-card-zag">Apple</h4>
+      <div class="img-wrap">
+        <img class="img" src="../src/assets/image/1.png" alt="">
+      </div>
+      <h5 class="product-card-info">Количество: 2</h5>
+      <h5 class="product-card-info">Год выхода: 2010</h5>
+      <h5 class="product-card-info">Производитель: Apple</h5>
+      <h5 class="product-card-info">Цвет: желтый</h5>
+      <h5 class="product-card-info">Количество камер: 2</h5>
+      <h5 class="product-card-info">Популярный: нет</h5>
+    </div>
+  </div>
+  <footer>
+   
+  </footer>
+</body>
+
+<script src="index.ts"></script>
+</html>

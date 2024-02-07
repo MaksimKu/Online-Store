@@ -1,0 +1,202 @@
+body {
+  background-color: aquamarine;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+ 
+}
+header {
+  background-color: royalblue;
+  height: 50px;
+  border-bottom: 3px solid rgb(223, 29, 29);
+  border-radius: 0 0 30px 30px;
+}
+footer {
+  background-color: royalblue;
+  margin-top: 100px;
+  height: 50px;
+  border-top: 3px solid rgb(223, 29, 29);
+  border-radius: 30px 30px 0 0;
+}
+.Filter_wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 1vw;
+}
+@media (max-width: 760px) {
+  .Filter_wrapper {
+    width: 93%;
+  flex-direction: column;
+  }
+}
+.Filter_group {
+  margin: 1%;
+  padding: 1% 2%;
+  width: 100%;
+  border: 1px solid rgb(223, 29, 29);
+  border-radius: 10px;
+}
+  .FilterBrand {
+    display: flex;
+    align-items: center;
+  }
+    .button_brand {
+      background-color: transparent;
+      cursor: pointer;
+      height: 40px;
+      width: 40px;
+      margin: 8px 6px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      border: 0;
+    }
+    .type-App {
+      background-image: url(assets/image/apple.28c40b10ca96b95867f4.svg);
+    }
+    .type-Sam {
+      background-image: url(assets/image/samsung.e555f7f5f7015817eef5.svg);
+    }
+    .type-Mi {
+      background-image: url(assets/image/xiaomi.7a6cbd5061b8996276f3.svg);
+    }
+      .button_brand_active {
+        filter: drop-shadow(2px 4px 6px black);
+      }
+  .FilterCamera {
+    display: flex;
+    align-items: center;
+  }
+    .button_cam {
+      background-color: transparent;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      color: #fff;
+      cursor: pointer;
+      height: 40px;
+      width: 40px;
+      margin: 8px 6px;
+    }
+    .button_cam_active {
+      border: 2px solid rgb(247, 163, 8);
+      color: rgb(247, 163, 8);
+      filter: drop-shadow(2px 4px 6px black);
+    }
+  .FilterColor {
+    display: flex;
+    align-items: center;
+  }
+    .button_color {
+      border: 2px solid #fff;
+      border-radius: 50%;
+      color: #fff;
+      cursor: pointer;
+      height: 40px;
+      width: 40px;
+      margin: 8px 6px;
+      border: 0;
+    }
+    .button_color-white {
+      background-color: white;
+    }
+    .button_color-yellow {
+      background-color: yellow;
+    }
+    .button_color-red {
+      background-color: red;
+    }
+    .button_color_active {
+      filter: drop-shadow(2px 4px 6px black);
+    }
+  .FilterFavor {
+    display: flex;
+    align-items: center;
+  }
+    .favor-input {
+      width: 27px;
+      height: 27px;
+    }
+/* footer {
+  background-image: url(./assets/image/1.png);
+} */
+.range-slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.range-slider_numb {
+  display: inline-flex;
+  width: 36px;
+  height: 27px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(223, 29, 29);
+  border-radius: 20px;
+  padding: 5px;
+}
+.container{
+  position: relative;
+  pointer-events: none;
+  width: 70%;
+}
+
+.container input[type="range"]{
+  height: 2em;
+  display: block;
+  margin: 0;
+  width: 100%;
+}
+
+.container input[type="range"]:last-child{
+  margin-top: -2em;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  pointer-events: all;
+}
+input[type="range"]::-moz-range-thumb {
+  pointer-events: all;
+}
+input[type="range"]::-ms-thumb {
+  pointer-events: all;
+}
+input[type='text'] {
+  width: 100%;
+  height: 30px;
+}
+select {
+  width: 100%;
+  height: 30px;
+}
+.Reset_button {
+  margin: 20px 10px;
+  background-color: transparent;
+    border: 3px solid #fff;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+    height: 50px;
+}
+.product {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+  .product-card {
+    max-width: 329px;
+    border: 1px solid rgb(223, 29, 29);
+    border-radius: 20px;
+    margin: 15px;
+  }
+  .product-card-info {
+    margin: 5px 0 0 33px;
+  }
+  .img-wrap {
+    justify-content: center;
+    display: flex;
+    background-color: white;
+  }
+  .img {
+    height: 100px;
+  }
